@@ -20,7 +20,7 @@ This tool demonstrates advanced external game manipulation techniques using netw
 1.  **Install: Python 3.11+**
 2.  **Download: _Demo V4_ from here:** [Download](https://github.com/kruz-dev/Demo-V4/releases/tag/undetectable)
 3.  **Extract: _Demo V4_**
-4.  **Run:** Right-click `DemoV4.py` and **Run as Administrator**. Select your game from the list.
+4.  **Run:** Right-click `start.bat` and **Open**. Select your game from the list.
 
 ## 🕹️ Usage
 
