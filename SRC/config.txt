@@ -1,0 +1,34 @@
+# Demo V4 Configuration File
+# ==========================
+# All values must be numbers (no quotes or text)
+# Restart the script to apply changes
+# Delete this file to regenerate defaults
+# ==========================
+
+# -----------------------
+# Recoil Control Settings
+# -----------------------
+recoil_speed = 3
+recoil_interval = 0.04
+
+# -----------------------
+# Spread Control Settings
+# -----------------------
+spread_delay = 0.1
+
+# -----------------------
+# Freeze Enemies Settings
+# -----------------------
+freeze_duration = 0.25
+freeze_interval = 0.25
+
+# -----------------------
+# GodMode Settings
+# -----------------------
+god_freeze_duration = 0.2
+god_freeze_interval = 0.36
+
+# -----------------------
+# External Full Auto Settings
+# -----------------------
+Hard-Locked
