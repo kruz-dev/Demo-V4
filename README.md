@@ -1,2 +1,46 @@
-# Demo-V4
-Undetectable Universal Game Cheat: Anti Recoil, GodMode, BHop, and more. Full source provided.
+# Demo V4 - Universal External Game Cheat
+
+> **⚠️ Warning:** For educational purposes only. Use in online games will likely get you leveled up. Use at your own risk~
+
+**Open Source | Undetectable | No Memory Editing | Works on most FPS games**
+
+This tool demonstrates advanced external game manipulation techniques using network packet timing and input simulation.
+
+## ✨ Features
+
+*   **🔥 Recoil Control:** Automatically controls weapon spray.
+*   **❄️ Enemy Freeze (Lag Switch):** Hold RMB to freeze enemies on your screen.
+*   **🛡️ God Mode:** Lag your outgoing packets to be harder to hit.
+*   **🔫 Full Auto:** Makes any weapon fully automatic.
+*   **🐇 Auto BHop:** Automatic bunny hopping.
+*   **🌐 Universal:** Works on Valorant, CS2, Apex, Fortnite, and more.
+
+## 🚀 Quick Start
+
+1.  **Install: Python 3.11+**
+2.  **Download: _Demo V4_ from this link: ''**
+3.  **Extract: _Demo V4_**
+4.  **Run:** Right-click `DemoV4.py` and **Run as Administrator**. Select your game from the list.
+
+## 🕹️ Usage
+
+| Hotkey | Action |
+| :--- | :--- |
+| `Hold LMB` | Recoil Control |
+| `Hold RMB` | Freeze Enemies |
+| `Alt + J` | Toggle God Mode |
+| `Alt + K` | Toggle Full Auto |
+| `Alt + L` | Toggle BHop |
+| `F2` | **Exit Safely** |
+
+## ⚙️ Configuration
+
+Tweak `config.txt` to perfect the timing for your game.
+
+## ❓ Why It's Effective
+
+This cheat is **external** and uses **network manipulation** (WinDivert) instead of easy-to-detect memory editing, making it incredibly stealthy.
+
+## 📜 License
+
+MIT License. Feel free to learn from it and build upon it.
