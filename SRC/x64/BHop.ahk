@@ -7,13 +7,23 @@ SetBatchLines, -1
 ; =============== CONFIG =================
 pressDuration := 10      ; Space pressed down for 10 ms (0.01s)
 interval := 45           ; Repeat every 45 ms
+delayBeforeBhop := 700   ; Wait 700 ms (0.7s) before jumping for more momentum
 ; ========================================
 
-; Detect when W is held, but also send it through to the game
 $w::
-    Send, {w down}                ; keep W working
-    While GetKeyState("w", "P")   ; while W is physically held
+    Send, {w down}   ; keep W working
+
+    startTime := A_TickCount  ; record the time when W is pressed
+
+    While GetKeyState("w", "P")  ; while W is physically held
     {
+        elapsed := A_TickCount - startTime
+        if (elapsed < delayBeforeBhop)
+        {
+            Sleep, 10  ; small sleep to avoid CPU overuse
+            continue
+        }
+
         ; Check if ANY movement key is being held
         if (GetKeyState("w", "P") or GetKeyState("a", "P") or GetKeyState("s", "P") or GetKeyState("d", "P"))
         {
@@ -27,5 +37,6 @@ $w::
             break
         }
     }
-    Send, {w up}   ; release W when you let go
+
+    Send, {w up}  ; release W when you let go
 return
