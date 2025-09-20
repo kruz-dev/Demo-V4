@@ -1,16 +1,16 @@
 # Demo V4 - Universal External Game Cheat
 
-> **⚠️ Warning:** For educational purposes only. Use in online games will likely get you leveled up. Use at your own risk~
+> **⚠️ Warning:** For educational purposes only. Use in online games will likely get you called out.
 
-**Open Source | Undetectable | No Memory Editing | Works on most FPS games**
+**Open Source | Undetectable | External | No Memory Editing | Works on all FPS games**
 
 This tool demonstrates advanced external game manipulation techniques using network packet timing and input simulation.
 
 ## ✨ Features
 
 *   **🔥 Recoil Control:** Automatically controls weapon spray.
-*   **❄️ Enemy Freeze (Lag Switch):** Hold RMB to freeze enemies on your screen.
-*   **🛡️ God Mode:** Lag your outgoing packets to be harder to hit.
+*   **❄️ Enemy Freeze:** Hold RMB to freeze enemies on your screen.
+*   **🛡️ God Mode:** Lags your player movement packets to be harder to hit.
 *   **🔫 Full Auto:** Makes any weapon fully automatic.
 *   **🐇 Auto BHop:** Automatic bunny hopping.
 *   **🌐 Universal:** Works on Valorant, CS2, Apex, Fortnite, and more.
@@ -37,9 +37,15 @@ This tool demonstrates advanced external game manipulation techniques using netw
 
 Tweak `config.txt` to perfect the timing for your game.
 
+## 💻 Source Code
+
+***You can view _Demo V4's_ Source code [**Here.**](SRC)***
+
+Oh wait.. the source code is the cheat, and the cheat is the source code. Please consult a therapist. 💀
+
 ## ❓ Why It's Effective
 
-This cheat is **external** and uses **network manipulation** (WinDivert) instead of easy-to-detect memory editing, making it incredibly stealthy.
+This cheat is **external** and uses **network manipulation** (`WinDivert`) instead of easy-to-detect memory editing, making it incredibly stealthy.
 
 ## 📜 License
 
