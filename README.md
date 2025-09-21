@@ -52,7 +52,7 @@ This cheat is **external** and uses **network manipulation** (`WinDivert`) inste
 
 Stay up-to-date with all changes, fixes, and new features in **Demo V4**:
 
-🔗 [View the full changelog](https://github.com/kruz-dev/Demo-V4/blob/main/CHANGELOG.txt)
+🔗 [View the full changelog](https://github.com/kruz-dev/Demo-V4/blob/main/CHANGELOG.md)
 
 > Tip: Check this before updating to see what’s new or fixed!
 
