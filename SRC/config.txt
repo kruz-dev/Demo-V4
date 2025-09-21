@@ -17,16 +17,16 @@ recoil_interval = 0.04
 spread_delay = 0.1
 
 # -----------------------
+# God Mode Settings
+# -----------------------
+god_mode_duration = 0.3
+god_mode_interval = 0.38
+
+# -----------------------
 # Freeze Enemies Settings
 # -----------------------
 freeze_duration = 0.25
 freeze_interval = 0.25
-
-# -----------------------
-# GodMode Settings
-# -----------------------
-god_freeze_duration = 0.2
-god_freeze_interval = 0.36
 
 # -----------------------
 # External Full Auto Settings
