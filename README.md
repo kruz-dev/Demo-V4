@@ -48,6 +48,14 @@ Oh wait.. the source code is the cheat, and the cheat is the source code. Please
 
 This cheat is **external** and uses **network manipulation** (`WinDivert`) instead of easy-to-detect memory editing, making it incredibly stealthy.
 
+## 📝 Changelog
+
+Stay up-to-date with all changes, fixes, and new features in **Demo V4**:
+
+🔗 [View the full changelog](https://github.com/kruz-dev/Demo-V4/blob/main/CHANGELOG.txt)
+
+> Tip: Check this before updating to see what’s new or fixed!
+
 ## 📜 License
 
 MIT License. Feel free to learn from it and build upon it.
