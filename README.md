@@ -56,6 +56,12 @@ Stay up-to-date with all changes, fixes, and new features in **Demo V4**:
 
 > Tip: Check this before updating to see what’s new or fixed!
 
+## ❌ Cheat Not Working?
+
+Make sure that:
+- All *VPNs* Turned off
+- Your *Antivirus* is Disabled (Or add an exception to the `Demo V4` Folder)
+
 ## 📜 License
 
 MIT License. Feel free to learn from it and build upon it.
