@@ -79,6 +79,28 @@ Solution:
 7.  **Ensure no VPNs or antivirus are interfering**
 8.  **Run `start.bat` and start having fun :]**
 
+## 🔧 How to Manually Add Python to PATH
+
+**If Python is installed but not working, manually add it to PATH:**
+
+### Windows 10/11:
+1. Press `Win + R`, type `sysdm.cpl`, press Enter
+2. Click **"Environment Variables"**
+3. Under **"System Variables"**, find `Path` and click **"Edit"**
+4. Click **"New"** and add these paths (adjust for your Python version):
+   ```
+   %LocalAppData%\Programs\Python\Python311\
+   %LocalAppData%\Programs\Python\Python311\Scripts\
+   ```
+5. Click **"OK"** to save all dialogs
+
+### Verify it worked:
+1. Open Command Prompt
+2. Type: `python --version`
+3. Should display: `Python 3.11.x`
+4. Type: `pip --version` 
+5. Should display PIP version information
+
 ## 📜 License
 
 MIT License. Feel free to learn from it and build upon it.
