@@ -42,7 +42,7 @@ Tweak `config.txt` to perfect the timing for your game.
 
 ***You can view _Demo V4's_ Source code [**Here.**](SRC)***
 
-Oh wait.. the source code is the cheat, and the cheat is the source code. Please consult a therapist. 💀
+> Oh wait.. the source code is the cheat, and the cheat is the source code. Please consult a therapist. 💀
 
 ## ❓ Why It's Effective
 
