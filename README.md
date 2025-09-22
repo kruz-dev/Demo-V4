@@ -17,11 +17,11 @@ This tool demonstrates advanced external game manipulation techniques using netw
 
 ## 🚀 Quick Start
 
-1.  **Install: Python 3.11+**
-2.  **Download:** `Demo V4` from here: [Download](https://github.com/kruz-dev/Demo-V4/releases/)
-3.  **Extract:** `Demo V4`
-4.  **Run:** `Requirements Installer.bat`
-5.  **Run:** Right-click `start.bat` and **Open**. Select your game from the list.
+1.  **Install Python 3.11+**
+2.  **Download** `Demo V4` from: [Releases](https://github.com/kruz-dev/Demo-V4/releases/)
+3.  **Extract** the archive
+4.  **Run** `Requirements Installer.bat`
+5.  **Right-click** `start.bat` and **Open**, then choose your game
 
 ## 🕹️ Usage
 
@@ -36,7 +36,7 @@ This tool demonstrates advanced external game manipulation techniques using netw
 
 ## ⚙️ Configuration
 
-Tweak `config.txt` to perfect the timing for your game.
+Edit `config.txt` to perfect the timing for your game.
 
 ## 💻 Source Code
 
@@ -56,11 +56,28 @@ Stay up-to-date with all changes, fixes, and new features in **Demo V4**:
 
 > Tip: Check this before updating to see what’s new or fixed!
 
-## ❌ Cheat Not Working?
+## ❌ Cheat Not Working? (Or getting an `WinDivert` Error)
 
 Make sure that:
 - All *VPNs* Turned off
-- Your *Antivirus* is Disabled (Or add an exception to the `Demo V4` Folder)
+- Your *Antivirus* is Disabled (Or add the `Demo V4` Folder to the exceptions)
+
+## ⛔ Cheat Not Opening?
+
+Common Causes:
+- Python not installed
+- PIP not installed
+- Python/PIP not added to PATH
+
+Solution:
+1.  **Install Python 3.11+** from [www.python.org/downloads/release/python-3119/](https://www.python.org/downloads/release/python-3119/)
+2.  **Select your platform** and download the installer
+3.  **Run the installer** and **check "Add Python to PATH"**
+4.  **Check the '`Add python to PATH`' toggle**
+5.  **Click "Install Now"**
+6.  **In the `Demo V4` folder, run `Requirements Installer.bat`**
+7.  **Ensure no VPNs or antivirus are interfering**
+8.  **Run `start.bat` and start having fun :]**
 
 ## 📜 License
 
