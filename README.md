@@ -13,7 +13,7 @@ This tool demonstrates advanced external game manipulation techniques using netw
 *   **🛡️ God Mode:** Lags your player movement packets to be harder to hit.
 *   **🔫 Full Auto:** Makes any weapon fully automatic.
 *   **🐇 Auto BHop:** Automatic bunny hopping.
-*   **🌐 Universal:** Works on Valorant, CS2, Apex, Fortnite, and more.
+*   **🌐 Universal:** Works on ***ALL*** games (Valorant, CS2, Apex, Fortnite, etc.)
 
 ## 🚀 Quick Start
 
