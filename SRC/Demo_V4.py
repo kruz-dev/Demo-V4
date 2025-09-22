@@ -36,6 +36,16 @@ if not is_admin():
 clear_screen()
 
 # ---------------------------
+# Set window title
+# ---------------------------
+def set_window_title(title):
+    """Set the console window title"""
+    ctypes.windll.kernel32.SetConsoleTitleW(title)
+
+# Set title to Demo V4
+set_window_title("Demo V4")
+
+# ---------------------------
 # Install modules if missing
 # ---------------------------
 modules = ["pyautogui", "pynput", "pydivert", "pywin32", "psutil"]
@@ -72,8 +82,8 @@ default_config = {
     "spread_delay": 0.10,
     "freeze_duration": 0.25,
     "freeze_interval": 0.25,
-    "god_freeze_duration": 0.2,
-    "god_freeze_interval": 0.4
+    "god_freeze_duration": 0.3,
+    "god_freeze_interval": 0.38
 }
 
 def load_config():
@@ -411,17 +421,10 @@ class DemoV4:
             self.is_rmb_pressed = pressed
 
     # ---------------------------
-    # Keyboard events
+    # Keyboard events - MODIFIED FOR GLOBAL HOTKEYS
     # ---------------------------
     def on_key_press(self, key):
-        # Allow hotkeys to work in both the target window AND our console window
-        target_active = self.target_window and is_target_window_active(self.target_window)
-        our_window_active = self.is_our_window_active()
-        
-        # Only process hotkeys if either window is active (except F2 which works globally)
-        if (key != kb.Key.f2 and not target_active and not our_window_active):
-            return
-            
+        # All hotkeys now work globally (from any window)
         try:
             if key == kb.Key.f2:
                 print("F2 pressed - exiting...")
@@ -506,13 +509,13 @@ class DemoV4:
                                 time.sleep(self.freeze_duration)
                                 last_freeze = now
                         w.send(packet)
-                    except pydivert.WinDivertError:
+                    except Exception:  # FIXED: Changed from WinDivertError to Exception
                         continue
         except Exception as e:
             print(f"Inbound WinDivert error: {e}")
 
     # ---------------------------
-    # GodMode (outbound)
+    # GodMode (outbound) - FIXED VERSION
     # ---------------------------
     def process_outbound(self):
         try:
@@ -521,14 +524,14 @@ class DemoV4:
                 while not self.should_exit:
                     try:
                         packet = w.recv()
-                        # GodMode only works when game is focused
-                        if self.god_mode and self.god_mode_active and self.is_game_focused():
+                        # GodMode only works when game is focused AND active
+                        if self.god_mode and self.god_mode_active and self.target_window and is_target_window_active(self.target_window):
                             now = time.time()
                             if now - last_god_freeze >= self.god_freeze_interval:
                                 time.sleep(self.god_freeze_duration)
                                 last_god_freeze = now
                         w.send(packet)
-                    except pydivert.WinDivertError:
+                    except Exception:  # FIXED: Changed from WinDivertError to Exception
                         continue
         except Exception as e:
             print(f"Outbound WinDivert error: {e}")
@@ -559,9 +562,17 @@ class DemoV4:
         mouse_listener = mouse.Listener(on_click=self.on_click)
         mouse_listener.start()
 
-        # Start keyboard listener
-        with kb.Listener(on_press=self.on_key_press, on_release=self.on_key_release) as keyboard_listener:
-            keyboard_listener.join()
+        # Start keyboard listener - MODIFIED FOR GLOBAL HOTKEYS
+        # We need to use a global keyboard listener now
+        keyboard_listener = kb.Listener(
+            on_press=self.on_key_press, 
+            on_release=self.on_key_release
+        )
+        keyboard_listener.start()
+
+        # Keep the main thread alive
+        while not self.should_exit:
+            time.sleep(0.1)
 
         # Cleanup
         self.should_exit = True
