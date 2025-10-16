@@ -1,6 +1,6 @@
 # Demo V4 - Universal External Game Cheat
 
-> **⚠️ Warning:** For educational purposes only. Use in online games will likely get you called out.
+> **⚠️ Warning:** This is too OP fr.
 
 **Open Source | Undetectable | External | No Memory Editing | Works on all FPS games**
 
