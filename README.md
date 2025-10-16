@@ -1,4 +1,4 @@
-# Demo V4 - Universal External Game Cheat
+# Demo V4
 
 > **⚠️ Warning:** This is too OP fr.
 
