@@ -1,6 +1,6 @@
 # Demo V4 - The Silent Advantage
 
-> **⚠️ Warning:** This is too OP fr.
+> **⚠️ Warning:** For educational purposes only
 
 **Open Source | Undetectable | External | No Memory Editing | Works on all FPS games**
 
