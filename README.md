@@ -72,8 +72,8 @@ Common Causes:
 Solution:
 1.  **Install Python 3.11+** from [www.python.org/downloads/release/python-3119/](https://www.python.org/downloads/release/python-3119/)
 2.  **Select your platform** and download the installer
-3.  **Run the installer** and **check "Add Python to PATH"**
-4.  **Check the '`Add python to PATH`' toggle**
+3.  **Run the installer**
+4.  **Check the '`Add Python to PATH`' toggle**
 5.  **Click "Install Now"**
 6.  **In the `Demo V4` folder, run `Requirements Installer.bat`**
 7.  **Ensure no VPNs or antivirus are interfering**
@@ -85,14 +85,15 @@ Solution:
 
 ### Windows 10/11:
 1. Press `Win + R`, type `sysdm.cpl`, press Enter
-2. Click **"Environment Variables"**
-3. Under **"System Variables"**, find `Path` and click **"Edit"**
-4. Click **"New"** and add these paths (adjust for your Python version):
+2. Click on the `Advanced` Section
+3. Click **"Environment Variables"**
+4. Under **"System Variables"**, find `Path` and click **"Edit"**
+5. Click **"New"** and add these paths (adjust for your Python version & ***PC User Name***):
    ```
-   %LocalAppData%\Programs\Python\Python311\
-   %LocalAppData%\Programs\Python\Python311\Scripts\
+   C:\Users\[Type your PC Username here]\AppData\Local\Programs\Python\Python311
+   C:\Users\[Type your PC Username here]\AppData\Local\Programs\Python\Python311\Scripts
    ```
-5. Click **"OK"** to save all dialogs
+6. Click **"OK"** to save all dialogs
 
 ### Verify it worked:
 1. Open Command Prompt
